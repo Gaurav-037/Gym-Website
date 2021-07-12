@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            background: url('img/people.jpg'); 
+            height: 1065px;
+            
+        }
+        /* .head{
+            background: url('img/header.jpg');
+            background-size: 4000 400 ;
+            background-repeat: no-repeat;
+        } */
+        .left{
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 22px;
+            /* border: 2px solid red; */
+            cursor: pointer;
+        }
+
+        .left img{
+            width: 73px;
+            filter: invert(100%);
+        }
+        .center{
+
+            display: block;
+            top: -10px;
+            width: 50%;
+            margin: 15px auto;
+            position: absolute;
+            left: 320px;
+            /* border: 2px solid green ; */
+        
+        }
+        .right{
+            position: absolute;
+            right: 22px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+            padding: 3px;
+
+        }
+        .call{
+            height: 40px;
+            width: 90px;
+            background-color: rgb(5, 5, 5);
+            color: white;
+            border-radius: 15px;
+            border: none;
+            /* cursor: pointer; */
+
+        }
+
+        .navbar {
+        
+            display: inline-block;
+            position:fixed;
+            /* border: 2px solid yellow; */
+            padding: 20px;
+
+        }
+        .navbar li {
+            display: inline-block;
+        
+        }
+        .navbar li a {
+
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            padding: 34px 23px ;
+            font-size: 25px;
+
+        }
+        .navbar li a:hover , .navbar li a:active  {
+            text-decoration: underline;
+            color: gray;
+            font-size: 35px;
+
+        }
+        
+        .quote{
+            position: relative;
+            top: 300px;
+            border: 2px solid white;
+            width: 1200px;
+            height: 300px;
+            font-size: 50px;
+            margin-left: 100px ;
+            box-sizing: border-box;
+            margin: auto;
+            background: url('img/logo3.jpg');
+            background-repeat: no-repeat;
+            
+        }
+        #quote{
+            margin-top: 2px;
+
+            margin-left: 100px ;
+
+        }
+        #quote1{
+
+            margin-left: 400px ;
+            font-size: 160px;
+            color: yellow;
+            margin-top: -70px;
+            margin-left: 320px;
+
+        }
+
+        .container{
+            border: 3px solid yellow;
+            border-radius: 30px;
+            position: relative;
+            top: 380px;
+            left: 100px;
+            height: 370px;
+            width: 500px;
+            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Baloo Bhai 2', cursive; 
+            box-sizing: border-box;
+        
+        }
+        .inputfield{
+            width: 300px;
+            margin-left: 100px;
+            height: 25px;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+        .inputfield input{
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .inputfield1{
+            width: 304px;
+            margin-left: 100px;
+            height: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 5px;
+            /* border: none; */
+            color: white;
+            border: 2px solid white;
+            background-color: black;
+        }
+
+
+        .goTop{
+            border: 4px solid red;
+            position: fixed;
+            right: 30px;
+            bottom: 42px;
+            width: 55px;
+            height: 25px;
+
+        }
+        .goTop a{
+            color: white;
+            text-decoration: none;
+            text-size-adjust: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="head">
+
+        <header class="header" id="Header">
+            <!-- Left box for logo -->
+            <div class="left">    
+                <img src="img/logo3.png" alt="">
+                <div>Fitness Club</div>
+            </div>
+            <!-- center box for nav bar -->
+            <div class="center">
+                <ul class="navbar">
+                    <li><a href="#home" id="home">Home</a></li>
+                    <li><a href="#" id="about">About us</a></li>
+                    <li><a href="#" id="fitness">Fitness calculation</a></li>
+                    <li><a href="#" id="contact">Contact us</a></li>
+                </ul>
+            </div>
+            <!-- right box for buttons -->
+            <div class="right">
+                <button class="call">Call Us Now</button>
+                <button class="call">Email Us</button>
+            </div>
+        </header>
+        <!-- Header section is end   -->
+        
+        <!-- This is Quote -->
+        <div class="quote" >
+            <h1 id="quote">Be Stronger Than Your</h1>    
+            <h1 id="quote1">Excuses..</h1>    
+        </div>
+        <!-- Quote is end -->
+    </div>
+    <!-- first img is end -->
+    
+    <!-- Home section is start -->
+    <div class="img">
+
+        <div class="container" id="home">
+            <center>
+                <h1>  Join the best gym of Nagar...  </h1>
+            </center>
+            <form action="noaction.php">
+                <input type="text" class="inputfield" placeholder="Enter your name" >
+                <input type="text" class="inputfield" placeholder="Enter your Age">
+                <input type="text" class="inputfield" placeholder="Enter your Gender">
+                <input type="text" class="inputfield" placeholder="Enter your Locality">
+                <input type="email" class="inputfield" placeholder="Enter your Email Id">
+                <input type="number" class="inputfield" placeholder="Enter your Phone Number">
+                <button class="inputfield1">Submit</button>    
+            </form>
+        </div>]
+        <!-- Home section is End -->
+        
+        <!-- This is go to top button  -->
+        <div class="goTop">
+            <a href="#Header">Go Top</a>
+        </div>
+        <!-- End of go to top button -->
+    </div>
+    <!-- second img is end -->
+    </body>
+    </html>
